@@ -5,7 +5,7 @@
 }
 
 /* generics */
- li{
+ ul{
     list-style-type: none;
  }
  a {
@@ -15,8 +15,8 @@
 
 body {
     max-width: 1200px;
-    min-width: 1200px;
-    background-color: bisque;
+    min-width: 700px;
+    background-color: #ffa5ab;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -29,11 +29,14 @@ h1 {
     padding: 20px;
     border: 1px solid black;
     border-bottom: none;
-    background-color: blue;
+    background-color: #a53860;
     color: white;
 }
 .clearfix {
     clear: both;
+    
+} 
+.sfondo {
     height: 250px;
     background-image: url(../tele.jpeg);
     background-size:contain;
@@ -46,12 +49,94 @@ h1 {
 nav > ul > li {
     float: left;
     width: calc(100% / 5);
+    text-align: center;
+    position: relative;
+    
+}
+
+
+
+
+
+nav > ul > li > a{
+    display: block;
+    padding: 10px 0;
+    background-color: #450920;
+    border-right: 1px solid black;
+    color: white;
+}
+
+nav > ul > li > ul {
+    position: absolute;
+    width: 100%;
+    top: 38px;
+    border-radius: 10px;
+}
+
+nav > ul > li > ul > li {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #ffa5ab;
+}
+nav > ul > li > ul > li > a {
+    padding: 5px 10px;
+    color: #013566;
+    border-radius: 10px;
+    background-color: #f9dbbd;
+    transition: 0.5s;
+}
+
+
+nav > ul > li > ul {
+    display: none;
+}
+
+
+nav > ul > li:hover ul {
+    display: block;
+    
+}
+nav > ul > li > ul > li > a:hover {
+    padding: 10px;
+    font-size: 1.3rem;
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+nav > ul li {
+    float: left;
+    width: calc(100% / 5);
     border: 1px solid black;
     text-align: center;
     padding: 10px;
     background-color: blueviolet;
-    position: relative;
+    /* position: relative;
     cursor: pointer;
+}
+ */
+/* 
+nav > ul > li > ul {
+    display: none;
 }
 
 nav > ul > li > a {
@@ -59,12 +144,59 @@ nav > ul > li > a {
     padding: 10px;
 }
 
+nav > ul > li > ul {
+    width: 100%;
+}
+
+nav > ul > li > ul >li {
+    width: 100%;
+}
+
+
+
+nav > ul > li:hover ul {
+    display: block;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* MENU DI SECONDO LIVELLO */
 
-nav > ul > li > ul {
+/* nav > ul > li > ul {
     padding: 0px;
     width: 101%;
     position: absolute;
@@ -75,11 +207,11 @@ nav > ul > li > ul {
 nav > ul > li > ul > li {
     background-color: beige;
     font-size: 0px;
-}
+} */
 
 /* hover-faccio apparire il menu di secondo livello con transition.
 Per usare transition ho modificato la font-sizze da 0 a 1rem */
-nav > ul > li:hover > ul > li{
+/* nav > ul > li:hover > ul > li{
     padding: 5px;
     display: block;
     font-size: 1rem;
@@ -96,7 +228,7 @@ nav > ul > li >ul > li:hover {
 }
 nav > ul > li >ul > li > a:hover {
     color: yellow;
-}
+} */
 
 
 
